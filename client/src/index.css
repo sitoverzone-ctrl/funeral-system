@@ -4,3 +4,17 @@ html, body, #root {
   font-family: 'Sarabun', sans-serif;
   background: #f0f2f5;
 }
+
+/* บังคับให้เมาส์แสดงผลปกติทั่วทั้งระบบ ป้องกันอาการเมาส์หาย */
+* {
+  cursor: auto;
+}
+
+/* กำหนดให้ปุ่ม ลิงก์ และช่องกรอกข้อมูลแสดงเคอร์เซอร์ให้ถูกต้อง */
+button, a, [role="button"], .ant-btn, .ant-select-selector, .ant-picker, .ant-table-row {
+  cursor: pointer !important;
+}
+
+input, textarea {
+  cursor: text !important;
+}
